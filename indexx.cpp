@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+// fstream class provides input and output operations like istream nd ostream
 #include <string>
 
 using namespace std;
@@ -19,7 +20,7 @@ int main()
 
 
     ifstream inFile(filename.c_str());
-    // c_str() function is used to convert a string to a C-style string
+    // c_str() function is used to convert a string to a C-style string(array of chars)
 
 
     if (!inFile.is_open())
@@ -31,7 +32,7 @@ int main()
     }
 
     //  inFile.open ("Countcpp.txt" , ios::in);
-
+    // open() - Opens the file to perform i/o operations 
 
     int wordCount = 0;
     string words;
